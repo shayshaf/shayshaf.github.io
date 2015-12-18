@@ -11,11 +11,11 @@ $(function() {
 
                 this.get('#/', function() {
                     $("#header").load("templates/header.html.erb");
-                    $("#main-block").load("templates/first-page.html.erb");
-
-                    $("#footer").load("templates/footer.html.erb", function() {
+                    $("#main-block").load("templates/first-page.html.erb", function() {
                         Global.init();
-                    })
+                    });
+
+                    $("#footer").load("templates/footer.html.erb")
                 });
 
 
