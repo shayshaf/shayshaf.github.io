@@ -58,7 +58,7 @@ $(function() {
             //check for new errors
             if (!Global.isEmail($('#email').val())) {
 
-                errors.push({'id': 'email', errorMessage: 'אנא מלא אימייל תקין'})
+                errors.push({'id': 'email', errorMessage: 'אימייל לא תקין'})
             }
 
             if (errors.length > 0){

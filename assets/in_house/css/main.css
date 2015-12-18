@@ -2,15 +2,15 @@ body{
   font-family: 'Arimo', sans-serif;
 }
 a{
-   color: #6D82C3;
- }
+  color: #6D82C3;
+}
 
 a:hover{
   color: #6D82C3;
 }
 
 p{
-  font-size: 13.5px;
+  font-size: 14px;
   color: #4A4A4A;
   margin: 0;
 }
@@ -25,12 +25,12 @@ p{
 }
 
 #title-right{
-   width: 15%;
+  width: 15%;
 }
 
 #title-left{
   width: 78%;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #999;
 }
 
 #page-container{
@@ -44,6 +44,7 @@ p{
 
 .error-text{
   color: red;
+  font-size: 11px;
 }
 
 .light-green{
@@ -106,7 +107,7 @@ p{
 }
 
 .checkbox label, .radio label{
-  font-size: 13.5px;
+  font-size: 14px;
 }
 
 .question{
@@ -185,7 +186,7 @@ p{
 
 
 #vision-message{
-  font-size: 50px;
+  font-size: 58px;
   font-weight: bold;
 }
 
