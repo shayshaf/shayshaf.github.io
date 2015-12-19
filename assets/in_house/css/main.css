@@ -15,10 +15,6 @@ p{
   margin: 0;
 }
 
-p:hover{
-  text-decoration: none;
-}
-
 #header{
   margin-top: 80px;
   margin-bottom: 40px;
@@ -188,6 +184,11 @@ p:hover{
   font-size: 24px;
   font-family: 'Patua One', cursive;
   cursor: pointer;
+  text-decoration: none;!important;
+}
+
+.domain-name:hover{
+  text-decoration: none;!important;
 }
 
 
