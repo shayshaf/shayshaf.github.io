@@ -199,6 +199,7 @@ p{
 
 .email-input{
   width: 30%;
+  min-width: 165px;
   height: 34px;
   margin-left: 1%;
   border: 1px solid #adadad
