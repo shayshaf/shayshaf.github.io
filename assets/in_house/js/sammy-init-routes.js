@@ -15,7 +15,9 @@ $(function() {
                         Global.init();
                     });
 
-                    $("#footer").load("templates/footer.html.erb")
+                    $("#footer").load("templates/footer.html.erb", function() {
+                        Footer.init();
+                    });
                 });
 
 
@@ -26,7 +28,7 @@ $(function() {
                     });
 
                     $("#footer").load("templates/footer.html.erb", function() {
-                        Global.init();
+                        Footer.init();
                     })
                 });
 
@@ -34,7 +36,7 @@ $(function() {
                     $("#header").load("templates/header.html.erb");
                     $("#main-block").load("templates/feedback-thank-you.html.erb");
                     $("#footer").load("templates/footer.html.erb", function() {
-                        Global.init();
+                        Footer.init();
                     })
                 });
 

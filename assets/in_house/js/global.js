@@ -26,13 +26,6 @@ $(function() {
                 Global.formSubmit()
             });
 
-            //$('#notify-form').bind('keypress', function(e) {
-            //    e.preventDefault();
-            //    var code = e.keyCode || e.which;
-            //    if(code == 13) { //'Enter' keycode
-            //        Global.formSubmit();
-            //    }
-            //});
         },
 
         formSubmit: function(){
