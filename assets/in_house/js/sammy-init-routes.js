@@ -43,7 +43,7 @@ $(function() {
                         Footer.init();
                     });
 
-                    ga('send', 'event', 'pages', 'feedback-page');
+                    ga('send', 'event', 'pages', 'final-thank-you-page');
                 });
 
             });
