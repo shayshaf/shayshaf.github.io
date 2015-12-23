@@ -32,7 +32,7 @@ $(function() {
 
         bindShareButton: function(){
            $('#share-on-facebook').on('click', function(){
-               ga('send', 'event', 'social', 'share-click');
+               ga('send', 'event', 'social', 'facebook-share-click');
            })
         }
     };
