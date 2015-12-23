@@ -116,7 +116,8 @@ $(function() {
                 $('#notify-me').switchClass(oldColor + '-background', newColor+ '-background', 'fast');
                 $('#feedback-button').switchClass(oldColor + '-background', newColor+ '-background', 'fast');
                 // send a google analytics event about it
-                ga('send', 'color-change');
+                ga('send', 'event', 'color-gimik', 'color-change');
+                ga('send', 'event', 'color-gimik', 'color-change-to' + newColor);
             });
         }
 
