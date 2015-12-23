@@ -10,6 +10,7 @@ $(function() {
             var app = $.sammy(function() {
 
                 this.get('#/', function() {
+
                     $("#header").load("templates/header.html.erb");
                     $("#main-block").load("templates/first-page.html.erb", function() {
                         Global.init();
@@ -18,6 +19,7 @@ $(function() {
                     $("#footer").load("templates/footer.html.erb", function() {
                         Footer.init();
                     });
+                    ga('send', 'event', 'pages', 'first-page');
                 });
 
 
@@ -29,7 +31,9 @@ $(function() {
 
                     $("#footer").load("templates/footer.html.erb", function() {
                         Footer.init();
-                    })
+                    });
+
+                    ga('send', 'event', 'pages', 'feedback-page');
                 });
 
                 this.get('#/feedback-thank-you', function() {
@@ -37,7 +41,9 @@ $(function() {
                     $("#main-block").load("templates/feedback-thank-you.html.erb");
                     $("#footer").load("templates/footer.html.erb", function() {
                         Footer.init();
-                    })
+                    });
+
+                    ga('send', 'event', 'pages', 'feedback-page');
                 });
 
             });
