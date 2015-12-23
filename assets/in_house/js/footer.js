@@ -4,6 +4,7 @@ $(function() {
         init: function () {
 
             Footer.bindChangeColor();
+            Footer.bindShareButton();
         },
 
         bindChangeColor: function(){
@@ -24,8 +25,15 @@ $(function() {
                 $('#notify-me').switchClass(oldColor + '-background', newColor+ '-background', 'fast');
                 $('#feedback-button').switchClass(oldColor + '-background', newColor+ '-background', 'fast');
                 // send a google analytics event about it
-                ga('send', 'color-change');
+                ga('send', 'event', 'color-gimik', 'color-change');
+                ga('send', 'event', 'color-gimik', 'color-change-to' + newColor);
             });
+        },
+
+        bindShareButton: function(){
+           $('#share-on-facebook').on('click', function(){
+               ga('send', 'event', 'social', 'share-click');
+           })
         }
     };
 

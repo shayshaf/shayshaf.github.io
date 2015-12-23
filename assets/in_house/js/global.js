@@ -8,17 +8,6 @@ $(function() {
         init: function () {
 
             Global.bindFormSubmit();
-            Global.bindChangeColor();
-        },
-
-        //open faq popup on click
-        bindFaqClick: function(){
-            $('.why-link-js').on('click', function(){
-                BootstrapDialog.alert({
-                    title: 'FAQ',
-                    message: $('<div></div>').load('templates/faq.html.erb')
-                });
-            });
         },
 
         bindFormSubmit: function(){
@@ -96,30 +85,6 @@ $(function() {
             var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
             return regex.test(email);
         },
-
-
-        bindChangeColor: function(){
-            $('#color-change').on('click', function(event){
-                event.preventDefault();
-
-                var oldColor, newColor;
-
-                oldColor = Global.colors[Global.currentColor];
-                Global.currentColor += 1;
-                if (Global.currentColor > Global.colors.length -1){
-                    Global.currentColor = 0;
-                }
-
-                newColor = Global.colors[Global.currentColor];
-
-                $('#vision-message').switchClass(oldColor, newColor, 'fast');
-                $('#notify-me').switchClass(oldColor + '-background', newColor+ '-background', 'fast');
-                $('#feedback-button').switchClass(oldColor + '-background', newColor+ '-background', 'fast');
-                // send a google analytics event about it
-                ga('send', 'event', 'color-gimik', 'color-change');
-                ga('send', 'event', 'color-gimik', 'color-change-to' + newColor);
-            });
-        }
 
     };
 
