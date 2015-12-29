@@ -22,6 +22,7 @@ $(function() {
                 newColor = Global.colors[Global.currentColor];
 
                 $('#vision-message').switchClass(oldColor, newColor, 'fast');
+                $('.color-header').switchClass(oldColor, newColor, 'fast');
                 $('#notify-me').switchClass(oldColor + '-background', newColor+ '-background', 'fast');
                 $('#feedback-button').switchClass(oldColor + '-background', newColor+ '-background', 'fast');
                 // send a google analytics event about it
