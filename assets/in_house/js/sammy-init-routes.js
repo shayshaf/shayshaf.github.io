@@ -46,6 +46,17 @@ $(function() {
                     ga('send', 'event', 'pages', 'final-thank-you-page');
                 });
 
+                this.get('#/first-post', function() {
+                    $("#header").load("templates/header.html.erb");
+
+                    $("#main-block").load("templates/first-post.html.erb");
+                    $("#footer").load("templates/footer.html.erb", function() {
+                        Footer.init();
+                    });
+
+                    ga('send', 'event', 'pages', 'first-post');
+                });
+
             });
 
             // start the application
